@@ -22,16 +22,11 @@
     }
   }
 
-  @page:right{
-    @bottom-right {
-      content: counter(page);
-    }
-  }
-
-  @page:left{
-    @bottom-left {
-      content: counter(page);
-    }
+  @page {
+    @top-left-corner { content: " "; border: solid green; }
+    @top-right-corner { content: url(foo.png); border: solid green; }
+    @bottom-right-corner { content: counter(page); border: solid green; }
+    @bottom-left-corner { content: normal; border: solid green; }
   }
 
 }
