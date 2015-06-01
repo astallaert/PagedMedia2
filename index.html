@@ -8,22 +8,13 @@
   @page {
     size: 8.5in 11.0in;
     margin: 10%;
+
     /*margin-left: 0.5in;
     margin-right: 2.0in;
     margin-top: 1.0in;
     margin-bottom: 3.0in;*/
   }
-  @page {
-    @tep-center {
-      margin: 10pt 0 30pt 0;
-      border-top: .25pt solid #666;
-      content: "Title Header";
-      font-size: 9pt;
-      color: #333;
-    }
-  }
-
-  @page {
+  
     @top-left-corner { content: " "; border: solid green; }
     @top-right-corner { content: url(foo.png); border: solid green; }
     @bottom-right-corner { content: counter(page); border: solid green; }
