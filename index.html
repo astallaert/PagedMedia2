@@ -3,23 +3,23 @@
 <head>
 <style>
 
+@page {
+  size: 8.5in 11.0in;
+  @top-center { content: "This is the Title"; border: solid green; }
+  margin: 10%;
+}
+
 @media print {
 
   @page {
     size: 8.5in 11.0in;
+    @top-center { content: "This is the Title"; border: solid green; }
     margin: 10%;
 
     /*margin-left: 0.5in;
     margin-right: 2.0in;
     margin-top: 1.0in;
     margin-bottom: 3.0in;*/
-  }
-
-  @page {
-    @top-left-corner { content: " "; border: solid green; }
-    @top-right-corner { content: url(foo.png); border: solid green; }
-    @bottom-right-corner { content: counter(page); border: solid green; }
-    @bottom-left-corner { content: normal; border: solid green; }
   }
 
 }
